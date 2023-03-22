@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * jack_baver - prints 24hrs time
+ * jack_bauer - prints 24hrs time
  *
  * Return: always 0
  *
  */
 
-void jack_baver(void)
+void jack_bauer(void)
 {
 	int i;
 	int j;
