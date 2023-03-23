@@ -2,8 +2,10 @@
 #include <stdio.h> 
 
 /**
- * main - prints the number from 1 to 100
- * Return: always 0
+ * main - prints the number from 1 to 100 followed by a new line
+ * but for multiples of three print Fizz instead of the number
+ * and for multiples of five print Buzz
+ * Return: always 0 (success)
  */
 int main(void)
 {
@@ -17,7 +19,7 @@ int main(void)
 		} else if (i % 5 == 0 && i % 3 != 0)
 		{
 			printf("Buzz");
-		} else if ( i % 3 == 0 && i % 5 != 0)
+		} else if ( i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
 		} else if (i == 1)
