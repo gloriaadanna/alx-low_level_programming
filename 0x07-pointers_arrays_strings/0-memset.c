@@ -3,10 +3,9 @@
 /**
  * _memset - fill a block of memory with a specific value
  * @s: starting address of memory to be filled
- * @b: the desired value
- * @n: number of bytes to be charged
- *
- * Return: changed array with new value for n bytes
+ * @b: constant byte
+ * @n: bytes 
+ * Return: always 0 (success)
  */
 char *_memset(char *s, char b, unsigned int n)
 {
