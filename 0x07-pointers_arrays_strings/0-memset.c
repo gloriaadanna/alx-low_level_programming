@@ -5,14 +5,15 @@
  * @s: starting address of memory to be filled
  * @b: constant byte
  * @n: bytes 
- * Return: always 0 (success)
+ * Return: changed array with new value for n bytes
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *dest, char b, unsigned int n)
 {
-	unsigned int n;
-
-	for (i = 0; i < n; i++)
+	int i = 0;
+	for (; n > 0; i++)
+	{
 		s[i] = b;
+		n--;
+	}
 	return (s);
 }
-
