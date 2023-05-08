@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
  * read_textfile - the main function of the program that
  * reads a textfile and prints
@@ -14,6 +14,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t w;
 	ssize_t t;
 	char *buf;
+
+	if (!filename)
+		return (0);
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
